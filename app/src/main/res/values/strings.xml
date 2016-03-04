@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EditTextPlaceHolder</string>
+    <string name="dollarSymbolWithSpace">$ </string>
 </resources>
