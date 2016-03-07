@@ -20,9 +20,10 @@ public class MainActivity extends AppCompatActivity {
         public void onTextChanged(CharSequence s, int start, int before, int count) {
 
             //The below logic is important.
-            if (!s.toString().contains("$ ")) {
-                et.setText("$ ");//Setting the text to dollar symbol with space
-                et.setSelection(et.getText().length());//Always setting the cursor position to index 2
+            if (!s.toString().contains("$")) {
+
+                et.setText("$" + s.toString());//Setting the text to dollar symbol with space
+                et.setSelection(1);//Always setting the cursor position to index 1
             }
         }
 
